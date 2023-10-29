@@ -33,7 +33,7 @@ public class mainmenu extends javax.swing.JFrame {
   public java.sql.Connection Connect() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/aaa", "root", "");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/atlas", "root", "");
             st = con.createStatement();
             return con;
 
