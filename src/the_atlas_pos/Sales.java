@@ -310,22 +310,25 @@ private void insertTosales(){
 
 
     public void getAllDataTo_Print() {
-        printTextArea.setText("\n\n\n\n\t\tPOS SYSTEM Store\n"
-                + "\t         The Atlas POS\n\t         Grocery Shop\n"
-                + "\t\t   \n\n"
-                + "  =========================================\n"
-                + "   " + date.getText() + " Cashier: "+fnames.getText()+" "+lsname.getText()+"\t\n"
-                + "  =========================================\n"
-                + "  Item Code:          Item Name: \n");
-       int cont = table.getRowCount();
-                   for ( int row = 0; row <= cont; row++){
-               String ItemCode = table.getModel().getValueAt(row,1).toString();
-               String ItemName = table.getModel().getValueAt(row,2).toString();
-               String Quantity = table.getModel().getValueAt(row,3).toString();
-               String Price = table.getModel().getValueAt(row,4).toString(); 
-               String Total = table.getModel().getValueAt(row,5).toString();  
-                printTextArea.append("  " + ItemCode + "\n                  " +ItemName + "\n\t" + Quantity + "\n\t" + Price + "\n\t"+Total+"\n");
-                   }
+        printTextArea.setText("\n\t\tPOS SYSTEM Store\n" +
+            "\tThe Atlas POS Grocery Shop\n" +
+            "============================================\n\t\t" +
+            date.getText() + " Cashier: " + fnames.getText() + " " + lsname.getText() + "\n" +
+            "============================================\n" +
+            "Item Code   Item Name    Qty  Price Total\n");
+
+    // Itemized Details
+    int cont = table.getRowCount();
+    for (int row = 0; row < cont; row++) {
+        String ItemCode = table.getModel().getValueAt(row, 1).toString();
+        String ItemName = table.getModel().getValueAt(row, 2).toString();
+        String Quantity = table.getModel().getValueAt(row, 3).toString();
+        String Price = table.getModel().getValueAt(row, 4).toString();
+        String Total = table.getModel().getValueAt(row, 5).toString();
+
+        String formattedLine = String.format("%-12s%-13s%-4s%-7s%s", ItemCode, ItemName, Quantity, Price, Total);
+        printTextArea.append(formattedLine + "\n");
+    }
     }
     public void printComponenet(Component component) {
         PrinterJob pj = PrinterJob.getPrinterJob();
@@ -1865,12 +1868,17 @@ addcart();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jPanel41ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jPanel41ComponentShown
-               printTextArea.append("\n  _________________________________________\n");
-        printTextArea.append("\n\t\tCash:  " + amount.getText());
-        printTextArea.append("\n\t\tChange:  " + change.getText());
-        printTextArea.append("\n\t\tTotal Ammount: " + totalamount1.getText());
-        printTextArea.append("\n  _________________________________________\n");
-        printTextArea.append("\n  _________Thank You ! Come Again__________\n"); 
+        printTextArea.append("============================================\n");
+    printTextArea.append(String.format("\t\tCash: %s\n", amount.getText()));
+    printTextArea.append(String.format("\t\tChange: %s\n", change.getText()));
+    printTextArea.append(String.format("\t\tTotal Amount: %s\n", totalamount1.getText()));
+    printTextArea.append("============================================\n");
+    printTextArea.append("\tThank You! Come Again\n");
+     printTextArea.append(
+        "\n\n\t\t  A   \n" +
+        "\t\t A A  \n" +
+        "\t\tA   A \n" 
+    );
     }//GEN-LAST:event_jPanel41ComponentShown
 
     private void receiptPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_receiptPropertyChange
