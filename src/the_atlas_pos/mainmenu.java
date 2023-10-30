@@ -5398,14 +5398,34 @@ a1.setBackground(new java.awt.Color(255,255,255));
     }//GEN-LAST:event_btn_damageActionPerformed
 
     private void excelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_excelMouseClicked
-        try{
-            exportTable(table, new File("D:\\Items Table.xls"));
-            JOptionPane.showMessageDialog(null,"EXPORTED SUCCESSFULLY \n The File is saved in D: ","EXPORT",JOptionPane.INFORMATION_MESSAGE);
+      try {
+    // Get the user's home directory
+    String userHome = System.getProperty("user.home");
 
-        }
-        catch(IOException e){
-            System.out.println(e);
-        }
+    // Define the base directory path
+    String baseDirectory = userHome + File.separator + "Documents" + File.separator + "The Atlas POS" + File.separator + "Items";
+
+    // Create the base directory if it doesn't exist
+    File baseDir = new File(baseDirectory);
+    if (!baseDir.exists()) {
+        baseDir.mkdirs();
+    }
+
+    // Generate a unique file name based on the current date and time
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+    String formattedDate = dateFormat.format(new Date());
+    String uniqueFileName = "Items Table - " + formattedDate + ".xls";
+
+    // Create the file in the "Items" subdirectory
+    File outputFile = new File(baseDirectory, uniqueFileName);
+
+    exportTable(table, outputFile);
+
+    // Display the location of the exported file in a message
+    JOptionPane.showMessageDialog(null, "EXPORTED SUCCESSFULLY\nThe File is saved in:\n" + outputFile.getAbsolutePath(), "EXPORT", JOptionPane.INFORMATION_MESSAGE);
+} catch (IOException e) {
+    System.out.println(e);
+}
     }//GEN-LAST:event_excelMouseClicked
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
@@ -5746,28 +5766,82 @@ con = Connect();
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_stocktMouseExited
 
+    private String getCurrentDate() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        return dateFormat.format(new Date());
+    }
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-     
-        if(stockprint == 0){
-                try{
-            exportTable(stockintable, new File("D:\\Stock In Table.xls"));
-            JOptionPane.showMessageDialog(null,"EXPORTED SUCCESSFULLY \n The File is saved in D: ","EXPORT",JOptionPane.INFORMATION_MESSAGE);
+         JTable selectedTable = null;
+    String tableName = "";
+    String labelValue = "";
 
-        }
-        catch(IOException e){
+    switch (salesprint) {
+        case 0:
+            selectedTable = salestable;
+            tableName = "Sales Summary";
+            labelValue = getCurrentDate(); // Get today's date in "yyyy-MM-dd" format
+            break;
+        case 1:
+            selectedTable = salestable1;
+            tableName = "Daily Sales";
+            labelValue = dailydate.getText();
+            break;
+        case 2:
+            selectedTable = salestable2;
+            tableName = "Monthly Sales";
+            labelValue = dailydate1.getText();
+            break;
+        case 3:
+            selectedTable = salestable3;
+            tableName = "Annual Sales";
+            labelValue = yyearr.getText();
+            break;
+        default:
+            break;
+    }
+
+    if (selectedTable != null) {
+        try {
+            // Get the user's home directory
+            String userHome = System.getProperty("user.home");
+
+            // Define the base directory path
+            String baseDirectory = userHome + File.separator + "Documents" + File.separator + "The Atlas POS" + File.separator + "Sales Reports";
+
+            // Create the base directory if it doesn't exist
+            File baseDir = new File(baseDirectory);
+            if (!baseDir.exists()) {
+                baseDir.mkdirs();
+            }
+
+            // Determine the subdirectory name based on the table name
+            String subDirName = tableName;
+            String subDirPath = baseDirectory + File.separator + subDirName;
+
+            // Create the subdirectory if it doesn't exist
+            File subDir = new File(subDirPath);
+            if (!subDir.exists()) {
+                subDir.mkdirs();
+            }
+
+            // Generate a unique file name based on the table name, label value, and the current date and time
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+            String formattedDate = dateFormat.format(new Date());
+            String uniqueFileName = formattedDate + " - " + labelValue + " - " + tableName + " Table.xls";
+
+            // Create the file in the appropriate subdirectory
+            File outputFile = new File(subDir, uniqueFileName);
+
+            exportTable(selectedTable, outputFile);
+
+            // Display the location of the exported file in a message
+            JOptionPane.showMessageDialog(null, "EXPORTED SUCCESSFULLY\nThe File is saved in:\n" + outputFile.getAbsolutePath(), "EXPORT", JOptionPane.INFORMATION_MESSAGE);
+        } catch (IOException e) {
             System.out.println(e);
         }
-        }
-        else{
-                try{
-            exportTable(stockouttable, new File("D:\\Stock Out Table.xls"));
-            JOptionPane.showMessageDialog(null,"EXPORTED SUCCESSFULLY \n The File is saved in D: ","EXPORT",JOptionPane.INFORMATION_MESSAGE);
-
-        }
-        catch(IOException e){
-            System.out.println(e);
-        }
-        }
+    } else {
+        System.out.println("No table selected for export.");
+    }
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -5839,46 +5913,72 @@ con = Connect();
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        if (salesprint == 0){
-        try{
-            exportTable(salestable, new File("D:\\Sales Summarry Table.xls"));
-            JOptionPane.showMessageDialog(null,"EXPORTED SUCCESSFULLY \n The File is saved in D: ","EXPORT",JOptionPane.INFORMATION_MESSAGE);
+        JTable selectedTable = null;
+    String tableName = "";
 
-        }
-        catch(IOException e){
+    switch (salesprint) {
+        case 0:
+            selectedTable = salestable;
+            tableName = "Sales Summary";
+            break;
+        case 1:
+            selectedTable = salestable1;
+            tableName = "Daily Sales";
+            break;
+        case 2:
+            selectedTable = salestable2;
+            tableName = "Monthly Sales";
+            break;
+        case 3:
+            selectedTable = salestable3;
+            tableName = "Annual Sales";
+            break;
+        default:
+            break;
+    }
+
+    if (selectedTable != null) {
+        try {
+            // Get the user's home directory
+            String userHome = System.getProperty("user.home");
+
+            // Define the base directory path
+            String baseDirectory = userHome + File.separator + "Documents" + File.separator + "The Atlas POS" + File.separator + "Sales Reports";
+
+            // Create the base directory if it doesn't exist
+            File baseDir = new File(baseDirectory);
+            if (!baseDir.exists()) {
+                baseDir.mkdirs();
+            }
+
+            // Determine the subdirectory name based on the table name
+            String subDirName = tableName;
+            String subDirPath = baseDirectory + File.separator + subDirName;
+
+            // Create the subdirectory if it doesn't exist
+            File subDir = new File(subDirPath);
+            if (!subDir.exists()) {
+                subDir.mkdirs();
+            }
+
+            // Generate a unique file name based on the table name, dailydate, and the current date and time
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+            String formattedDate = dateFormat.format(new Date());
+            String uniqueFileName = formattedDate + " - " + dailydate.getText() + " - " + tableName + " Table.xls";
+
+            // Create the file in the appropriate subdirectory
+            File outputFile = new File(subDir, uniqueFileName);
+
+            exportTable(selectedTable, outputFile);
+
+            // Display the location of the exported file in a message
+            JOptionPane.showMessageDialog(null, "EXPORTED SUCCESSFULLY\nThe File is saved in:\n" + outputFile.getAbsolutePath(), "EXPORT", JOptionPane.INFORMATION_MESSAGE);
+        } catch (IOException e) {
             System.out.println(e);
         }
-        }
-        else if(salesprint == 1){
-        try{
-            exportTable(salestable1, new File("D:\\Daily Sales Table.xls"));
-            JOptionPane.showMessageDialog(null,"EXPORTED SUCCESSFULLY \n The File is saved in D: ","EXPORT",JOptionPane.INFORMATION_MESSAGE);
-
-        }
-        catch(IOException e){
-            System.out.println(e);
-        }
-        }
-        else if(salesprint == 2){
-        try{
-            exportTable(salestable2, new File("D:\\Monthly Sales Table.xls"));
-            JOptionPane.showMessageDialog(null,"EXPORTED SUCCESSFULLY \n The File is saved in D: ","EXPORT",JOptionPane.INFORMATION_MESSAGE);
-
-        }
-        catch(IOException e){
-            System.out.println(e);
-        }
-        }
-        else{
-        try{
-            exportTable(salestable3, new File("D:\\Annual Sales Table.xls"));
-            JOptionPane.showMessageDialog(null,"EXPORTED SUCCESSFULLY \n The File is saved in D: ","EXPORT",JOptionPane.INFORMATION_MESSAGE);
-
-        }
-        catch(IOException e){
-            System.out.println(e);
-        }
-        }
+    } else {
+        System.out.println("No table selected for export.");
+    }
     }//GEN-LAST:event_jButton9ActionPerformed
 
     /**
