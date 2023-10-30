@@ -42,8 +42,8 @@ public class Sales extends javax.swing.JFrame {
     ResultSet rs;
       public java.sql.Connection Connect() {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/atlas", "root", "");
+            Class.forName("org.h2.Driver");
+            con = DriverManager.getConnection("jdbc:h2:./database/atlas;", "admin", "");
             st = con.createStatement();
             return con;
 
@@ -294,7 +294,7 @@ private void insertTosales(){
                         float allpro = pro * q;
                         ap = String.valueOf(allpro);
                         
-                String sales = "Insert into sales(Date,ItemCode,ItemName,Quantity,Price,Total,Profit,Month)"
+                String sales = "Insert into sales(Date,ItemCode,ItemName,Quantity,Price,Total,Profit,\"Month\")"
                     + "VALUES ('" + Date + "'," + ItemCode + ",'" + ItemName + "'," + Quantity + "," + Price + "," + Total + ","+ap+","+today+")";
                                         pst = con.prepareStatement(sales);
                                         pst.execute(); 

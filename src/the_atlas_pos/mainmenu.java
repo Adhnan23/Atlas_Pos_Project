@@ -32,8 +32,8 @@ public class mainmenu extends javax.swing.JFrame {
     }
   public java.sql.Connection Connect() {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/atlas", "root", "");
+            Class.forName("org.h2.Driver");
+            con = DriverManager.getConnection("jdbc:h2:./database/atlas;", "admin", "");
             st = con.createStatement();
             return con;
 
@@ -4942,7 +4942,7 @@ a1.setBackground(new java.awt.Color(255,255,255));
      btn_salessummarry.setBackground(new java.awt.Color(173,216,230));
      btn_salesmonthlys.setBackground(new java.awt.Color(173,216,230));
      btn_salesannual.setBackground(new java.awt.Color(173,216,230));
-    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-dd-MM");
+    SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-YYYY");
     Date dateobj = new Date();
     String today = sdf.format(dateobj.getTime());
     dailydate.setText(today);
@@ -5062,7 +5062,7 @@ con = Connect();
             break;
     }
   con = Connect();
-    String sql = "SELECT ItemCode, ItemName, SUM(Quantity), Price, sum(Total), SUM(Profit) FROM sales WHERE Month = "+today+" AND Date LIKE '"+year+"%'GROUP BY ItemName";
+    String sql = "SELECT ItemCode, ItemName, SUM(Quantity), Price, sum(Total), SUM(Profit) FROM sales WHERE \"Month\" = "+today+" AND Date LIKE '"+year+"%'GROUP BY ItemName";
         try{
             DefaultTableModel model = (DefaultTableModel) salestable2.getModel();
             model.setRowCount(0);
