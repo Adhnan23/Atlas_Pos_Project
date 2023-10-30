@@ -27,8 +27,8 @@ public class login extends javax.swing.JFrame {
     }
    public java.sql.Connection Connect() {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/atlas", "root", "");
+            Class.forName("org.h2.Driver");
+            con = DriverManager.getConnection("jdbc:h2:./database/atlas;", "admin", "");
             st = con.createStatement();
             return con;
 
