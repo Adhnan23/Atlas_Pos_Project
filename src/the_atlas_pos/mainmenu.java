@@ -4942,7 +4942,7 @@ a1.setBackground(new java.awt.Color(255,255,255));
      btn_salessummarry.setBackground(new java.awt.Color(173,216,230));
      btn_salesmonthlys.setBackground(new java.awt.Color(173,216,230));
      btn_salesannual.setBackground(new java.awt.Color(173,216,230));
-    SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-YYYY");
+    SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-dd");
     Date dateobj = new Date();
     String today = sdf.format(dateobj.getTime());
     dailydate.setText(today);
@@ -5062,7 +5062,7 @@ con = Connect();
             break;
     }
   con = Connect();
-    String sql = "SELECT ItemCode, ItemName, SUM(Quantity), Price, sum(Total), SUM(Profit) FROM sales WHERE \"Month\" = "+today+" AND Date LIKE '"+year+"%'GROUP BY ItemName";
+    String sql = "SELECT ItemCode, ItemName, SUM(Quantity), Price, SUM(Total), SUM(Profit) FROM sales WHERE \"Month\" = " + today + " AND Date LIKE '" + year + "%' GROUP BY ItemName";
         try{
             DefaultTableModel model = (DefaultTableModel) salestable2.getModel();
             model.setRowCount(0);
@@ -5082,11 +5082,12 @@ con = Connect();
             
         }catch(Exception ex){
             System.out.println(ex);
+            System.out.println(sql);
         }
         
     //monthlyales
                   try {
-          String sqal = "SELECT SUM(Total),SUM(Profit) FROM sales WHERE Date LIKE '"+year+"%' AND Month = "+today;
+          String sqal = "SELECT SUM(Total),SUM(Profit) FROM sales WHERE Date LIKE '"+year+"%' AND \"Month\" = "+today;
             pst = con.prepareStatement(sqal);
             rs = pst.executeQuery(); 
                 while (rs.next()){
@@ -5214,7 +5215,7 @@ a1.setBackground(new java.awt.Color(255,255,255));
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
     if(searchmonth.isShowing()){
   con = Connect();
-    String sql = "SELECT ItemCode, ItemName, SUM(Quantity), Price, sum(Total), SUM(Profit) FROM sales WHERE Month = "+months.getText()+" AND Date LIKE '"+months1.getText()+"%'GROUP BY ItemName";
+    String sql = "SELECT ItemCode, ItemName, SUM(Quantity), Price, sum(Total), SUM(Profit) FROM sales WHERE \"Month\" = "+months.getText()+" AND Date LIKE '"+months1.getText()+"%'GROUP BY ItemName";
         try{
             DefaultTableModel model = (DefaultTableModel) salestable2.getModel();
             model.setRowCount(0);

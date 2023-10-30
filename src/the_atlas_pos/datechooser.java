@@ -101,52 +101,52 @@ public class datechooser extends javax.swing.JFrame {
         month = "01";
             if(b == 1){
                 day = "01";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 2){
                 day = "02";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 3){
                 day = "03";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 4){
                 day = "04";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 5){
                 day = "05";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 6){
                 day = "06";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 7){
                 day = "07";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 8){
                 day = "08";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 9){
                 day = "09";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else{
                 int c = days.getDay();
-                String line = yearr+"-"+c+"-"+month;
+                String line = yearr+"-"+month+"-"+c;
                 mainmenu.dailydate.setText(line);  
             }
     }
@@ -154,52 +154,52 @@ public class datechooser extends javax.swing.JFrame {
         month = "02";
             if(b == 1){
                 day = "01";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 2){
                 day = "02";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 3){
                 day = "03";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 4){
                 day = "04";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 5){
                 day = "05";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 6){
                 day = "06";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 7){
                 day = "07";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 8){
                 day = "08";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 9){
                 day = "09";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else{
                 int c = days.getDay();
-                String line = yearr+"-"+c+"-"+month;
+                String line = yearr+"-"+month+"-"+c;
                 mainmenu.dailydate.setText(line);  
             }
     }
@@ -207,52 +207,52 @@ public class datechooser extends javax.swing.JFrame {
         month = "03";
             if(b == 1){
                 day = "01";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 2){
                 day = "02";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 3){
                 day = "03";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 4){
                 day = "04";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 5){
                 day = "05";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 6){
                 day = "06";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 7){
                 day = "07";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 8){
                 day = "08";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 9){
                 day = "09";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else{
                 int c = days.getDay();
-                String line = yearr+"-"+c+"-"+month;
+                String line = yearr+"-"+month+"-"+c;
                 mainmenu.dailydate.setText(line);  
             }
     }
@@ -260,52 +260,52 @@ public class datechooser extends javax.swing.JFrame {
         month = "04";
             if(b == 1){
                 day = "01";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 2){
                 day = "02";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 3){
                 day = "03";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 4){
                 day = "04";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 5){
                 day = "05";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 6){
                 day = "06";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 7){
                 day = "07";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 8){
                 day = "08";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 9){
                 day = "09";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else{
                 int c = days.getDay();
-                String line = yearr+"-"+c+"-"+month;
+                String line = yearr+"-"+month+"-"+c;
                 mainmenu.dailydate.setText(line);  
             }
     }
@@ -313,52 +313,52 @@ public class datechooser extends javax.swing.JFrame {
         month = "05";
             if(b == 1){
                 day = "01";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 2){
                 day = "02";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 3){
                 day = "03";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 4){
                 day = "04";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 5){
                 day = "05";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 6){
                 day = "06";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 7){
                 day = "07";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 8){
                 day = "08";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 9){
                 day = "09";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else{
                 int c = days.getDay();
-                String line = yearr+"-"+c+"-"+month;
+                String line = yearr+"-"+month+"-"+c;
                 mainmenu.dailydate.setText(line);  
             }
     }
@@ -366,52 +366,52 @@ public class datechooser extends javax.swing.JFrame {
         month = "06";
             if(b == 1){
                 day = "01";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 2){
                 day = "02";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 3){
                 day = "03";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 4){
                 day = "04";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 5){
                 day = "05";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 6){
                 day = "06";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 7){
                 day = "07";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 8){
                 day = "08";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 9){
                 day = "09";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else{
                 int c = days.getDay();
-                String line = yearr+"-"+c+"-"+month;
+                String line = yearr+"-"+month+"-"+c;
                 mainmenu.dailydate.setText(line);  
             }
     }
@@ -419,52 +419,52 @@ public class datechooser extends javax.swing.JFrame {
         month = "07";
             if(b == 1){
                 day = "01";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 2){
                 day = "02";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 3){
                 day = "03";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 4){
                 day = "04";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 5){
                 day = "05";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 6){
                 day = "06";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 7){
                 day = "07";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 8){
                 day = "08";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 9){
                 day = "09";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else{
                 int c = days.getDay();
-                String line = yearr+"-"+c+"-"+month;
+                String line = yearr+"-"+month+"-"+c;
                 mainmenu.dailydate.setText(line);  
             }
     }
@@ -472,52 +472,52 @@ public class datechooser extends javax.swing.JFrame {
         month = "08";
             if(b == 1){
                 day = "01";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 2){
                 day = "02";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 3){
                 day = "03";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 4){
                 day = "04";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 5){
                 day = "05";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 6){
                 day = "06";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 7){
                 day = "07";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 8){
                 day = "08";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 9){
                 day = "09";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else{
                 int c = days.getDay();
-                String line = yearr+"-"+c+"-"+month;
+                String line = yearr+"-"+month+"-"+c;
                 mainmenu.dailydate.setText(line);  
             }
     }
@@ -525,52 +525,52 @@ public class datechooser extends javax.swing.JFrame {
         month = "09";
             if(b == 1){
                 day = "01";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 2){
                 day = "02";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 3){
                 day = "03";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 4){
                 day = "04";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 5){
                 day = "05";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 6){
                 day = "06";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 7){
                 day = "07";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 8){
                 day = "08";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 9){
                 day = "09";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else{
                 int c = days.getDay();
-                String line = yearr+"-"+c+"-"+month;
+                String line = yearr+"-"+month+"-"+c;
                 mainmenu.dailydate.setText(line);  
             }
     }
@@ -578,52 +578,52 @@ public class datechooser extends javax.swing.JFrame {
         month = "10";
             if(b == 1){
                 day = "01";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 2){
                 day = "02";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 3){
                 day = "03";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 4){
                 day = "04";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 5){
                 day = "05";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 6){
                 day = "06";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 7){
                 day = "07";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 8){
                 day = "08";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 9){
                 day = "09";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else{
                 int c = days.getDay();
-                String line = yearr+"-"+c+"-"+month;
+                String line = yearr+"-"+month+"-"+c;
                 mainmenu.dailydate.setText(line);  
             }
     }
@@ -631,52 +631,52 @@ public class datechooser extends javax.swing.JFrame {
         month = "11";
             if(b == 1){
                 day = "01";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 2){
                 day = "02";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 3){
                 day = "03";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 4){
                 day = "04";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 5){
                 day = "05";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 6){
                 day = "06";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 7){
                 day = "07";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 8){
                 day = "08";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 9){
                 day = "09";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else{
                 int c = days.getDay();
-                String line = yearr+"-"+c+"-"+month;
+                String line = yearr+"-"+month+"-"+c;
                 mainmenu.dailydate.setText(line);  
             }
     }
@@ -684,52 +684,52 @@ public class datechooser extends javax.swing.JFrame {
         month = "12";
             if(b == 1){
                 day = "01";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 2){
                 day = "02";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 3){
                 day = "03";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 4){
                 day = "04";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 5){
                 day = "05";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 6){
                 day = "06";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 7){
                 day = "07";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 8){
                 day = "08";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else if(b == 9){
                 day = "09";
-                String line = yearr+"-"+day+"-"+month;
+                String line = yearr+"-"+month+"-"+day;
                 mainmenu.dailydate.setText(line);  
             }
             else{
                 int c = days.getDay();
-                String line = yearr+"-"+c+"-"+month;
+                String line = yearr+"-"+month+"-"+c;
                 mainmenu.dailydate.setText(line);  
             }
     }

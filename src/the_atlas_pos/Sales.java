@@ -268,6 +268,8 @@ private void itemupdateadd(){
 private void insertTosales(){
     SimpleDateFormat sdf = new SimpleDateFormat("MM");
     Date dateobj = new Date();
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    String formattedDate = dateFormat.format(dateobj);
     String today = sdf.format(dateobj.getTime());
        int cont = table.getRowCount();
            con = Connect();
@@ -295,14 +297,18 @@ private void insertTosales(){
                         ap = String.valueOf(allpro);
                         
                 String sales = "Insert into sales(Date,ItemCode,ItemName,Quantity,Price,Total,Profit,\"Month\")"
-                    + "VALUES ('" + Date + "'," + ItemCode + ",'" + ItemName + "'," + Quantity + "," + Price + "," + Total + ","+ap+","+today+")";
+                    + "VALUES ('" + formattedDate + "'," + ItemCode + ",'" + ItemName + "'," + Quantity + "," + Price + "," + Total + ","+ap+","+today+")";
                                         pst = con.prepareStatement(sales);
-                                        pst.execute(); 
+                                        pst.execute();
                     }
                     catch(Exception e){
+                        System.out.println(e);
                     }
         }    
 }
+
+
+
     public void getAllDataTo_Print() {
         printTextArea.setText("\n\n\n\n\t\tPOS SYSTEM Store\n"
                 + "\t         The Atlas POS\n\t         Grocery Shop\n"
